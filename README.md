@@ -1,18 +1,32 @@
-# vue-text-dot
+# vue-input-tag
 
-> A vue component for text dotdotdot
+<p align="center">
+  <img src="demo.gif" width="750" alt="Logo"/>
+</p>
 
-## Build Setup
+## Installation
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+npm install vue-text-dot --save
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+and in your component:
+
+``` javascript
+import dot from 'vue-text-dot'
+```
+
+## Usage
+
+``` html
+<dot :msg="someText" @isDot="methods when is Doted"></dot>
+```
+
+## Props
+| Name | Type | Default | Description |
+| ---:| --- | ---| --- |
+| msg | String | [] | Tags to be render in the input |
+| line | Number | 1 | the number of rows that you want to show |
+
+## Tips
+ you'd better set the class for component including line-height
